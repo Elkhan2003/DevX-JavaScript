@@ -1,0 +1,28 @@
+// Ваш SCSS код здесь
+// Создаем переменные цветовых значений градиента
+$color-start: #ffffff;
+$color-end: #f5f5f5;
+
+// Создаем миксин градиента
+@mixin gradient {
+	background: linear-gradient(to right, $color-start, $color-end);
+}
+
+// Создаем анимацию
+@keyframes background-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+// Создаем класс с задним фоном и анимацией
+.bg-gradient {
+	@include gradient;
+	animation: background-animation 15s ease infinite;
+}

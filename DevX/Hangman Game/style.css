@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #119b4f;
+}
+.container {
+  font-size: 16px;
+  background-color: #ffffff;
+  width: 1000px;
+  max-width: 600px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 30px;
+  border-radius: 15px;
+}
+#options-container {
+  text-align: center;
+}
+#options-container div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px;
+}
+#options-container button {
+  padding: 10px 20px;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 15px;
+  text-transform: capitalize;
+}
+#options-container button:disabled {
+  border: 3px solid #80808056;
+  color: #80808055;
+  background-color: #efefef49;
+}
+#options-container button.active {
+  background-color: #26ad2a;
+  border: 3px solid #b72121;
+  color: #ffffff;
+}
+.letter-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+#letter-container button {
+  height: 30px;
+  width: 35px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.new-game-popup {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+#user-input-section {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  margin: 20px 10px;
+}
+canvas {
+  display: block;
+  margin: auto;
+  border: 2px solid #d40707;
+  border-radius: 15px;
+}
+.hide {
+  display: none;
+}
+#result-text h2 {
+  font-size: 16px;
+  text-align: center;
+}
+#result-text p {
+  font-size: 16px;
+  margin: 20px 15px;
+}
+#result-text span {
+  font-weight: 600;
+  color: #ff0000;
+}
+#new-game-button {
+  font-size: 16px;
+  padding: 20px 15px;
+  background-color: #d01818;
+  border: 3px solid #000000;
+  color: #000000;
+  border-radius: 15px;
+}
+.win-msg {
+  color: #39d78d;
+}
+.lose-msg {
+  color: #ff0000;
+}
+.dashes {
+  margin: 5px;
+}
